@@ -15,6 +15,7 @@ if (Sys.getenv("FIGSHARE_API") != "") {
   get_stage("deploy") %>%
     add_code_step(
       {
+        library(magrittr)
         api_key <-
           Sys.getenv("FIGSHARE_API") %>%
           base64enc::base64decode() %>%
@@ -34,6 +35,11 @@ if (Sys.getenv("FIGSHARE_API") != "") {
 
         rfigshare::fs_upload(id, path, session = api_key)
         message("Uploaded ", path, " to article ", id)
+
+        # Normally you want to review an article before making it public,
+        # we don't for this example:
+        rfigshare::fs_add_categories(id, "Ecology", session = api_key)
+        rfigshare::fs_make_public(id, session = api_key)
       },
       # Needs rfigshare > 0.3.7
       prepare_call = remotes::install_github("ropensci/rfigshare")
