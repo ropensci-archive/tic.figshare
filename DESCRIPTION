@@ -1,12 +1,12 @@
 Package: tic.figshare
-Title: What the Package Does (one line, title case)
+Title: Example Package to Test Unattended Deployment to 'figshare' For 'tic'
 Version: 0.0-0
 Authors@R: person("Kirill", "Müller", role = c("aut", "cre"), email = "krlmlr+r@mailbox.org")
-Description: What the package does (one paragraph).
+Description: Deploys all builds as a new article on FigShare
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Date: 2018-01-29
-BugReports: https://github.com/krlmlr/tic.fixture/issues
-URL: https://github.com/krlmlr/tic.fixture, http://krlmlr.github.io/tic.fixture
+BugReports: https://github.com/krlmlr/tic.figshare/issues
+URL: https://github.com/krlmlr/tic.figshare
 Roxygen: list(markdown = TRUE)
