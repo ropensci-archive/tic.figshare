@@ -36,7 +36,8 @@ if (Sys.getenv("FIGSHARE_API") != "") {
         # Workaround for ropenscilabs/tic#38
         path <- dir(pattern = glob2rx("*.tar.gz"))[[1]]
 
-        rfigshare::fs_upload(id, path, session = api_key)
+        ret <- rfigshare:::fs_upload_one(id, path, session = api_key)
+        httr::stop_for_status(ret, paste0("upload file ", path))
         message("Uploaded ", path, " to article ", id)
 
         # Normally you want to review an article before making it public,
