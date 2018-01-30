@@ -2,7 +2,7 @@ Package: tic.figshare
 Title: Example Package to Test Unattended Deployment to 'figshare' For 'tic'
 Version: 0.0-0
 Authors@R: person("Kirill", "Müller", role = c("aut", "cre"), email = "krlmlr+r@mailbox.org")
-Description: Deploys all builds as a new article on FigShare
+Description: Deploys all builds as a new article on FigShare.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
