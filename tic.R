@@ -26,11 +26,11 @@ if (Sys.getenv("FIGSHARE_API") != "") {
           title = unname(desc::desc_get("Title")),
           description = unname(desc::desc_get("Description")),
           type = "fileset",
-          session = api_key,
-          debug = TRUE
+          session = api_key
         )
-        httr::stop_for_status(id, "create article")
-        id <- httr::content(id)
+        if (!is.numeric(id)) {
+          httr::stop_for_status(id, "create article")
+        }
         message("Created article ", id)
 
         # Workaround for ropenscilabs/tic#38
