@@ -35,6 +35,7 @@ if (Sys.getenv("FIGSHARE_API") != "") {
         rfigshare::fs_upload(id, path, session = api_key)
         message("Uploaded ", path, " to article ", id)
       },
-      prepare_call = remotes::install_github("ropensci/rfigshare#105")
+      # Needs rfigshare > 0.3.7
+      prepare_call = remotes::install_github("ropensci/rfigshare")
     )
 }
