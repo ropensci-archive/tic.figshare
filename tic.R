@@ -23,8 +23,8 @@ if (Sys.getenv("FIGSHARE_API") != "") {
           unserialize()
 
         id <- rfigshare::fs_create(
-          title = desc::desc_get("Title"),
-          description = desc::desc_get("Description"),
+          title = unname(desc::desc_get("Title")),
+          description = unname(desc::desc_get("Description")),
           type = "fileset",
           session = api_key
         )
