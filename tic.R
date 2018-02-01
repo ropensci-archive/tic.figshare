@@ -18,9 +18,7 @@ if (Sys.getenv("FIGSHARE_API") != "") {
         library(magrittr)
         api_key <-
           Sys.getenv("FIGSHARE_API") %>%
-          base64enc::base64decode() %>%
-          memDecompress("gzip") %>%
-          unserialize()
+          tic::base64unserialize()
 
         id <- rfigshare::fs_create(
           title = unname(desc::desc_get("Title")),
