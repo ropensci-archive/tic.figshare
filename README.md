@@ -1,8 +1,8 @@
 # tic.figshare
 
-[![Travis-CI Build Status](https://travis-ci.org/ropenscilabs/tic.fighare.svg?branch=master)](https://travis-ci.org/ropenscilabs/tic.fighare)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ropenscilabs/tic.fighare?branch=master&svg=true)](https://ci.appveyor.com/project/ropensci/tic.fighare)
-[![Coverage Status](https://codecov.io/gh/ropenscilabs/tic.fighare/branch/master/graph/badge.svg)](https://codecov.io/github/ropenscilabs/tic.fighare?branch=master)
+[![Travis-CI Build Status](https://travis-ci.org/ropenscilabs/tic.figshare.svg?branch=master)](https://travis-ci.org/ropenscilabs/tic.figshare)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ropenscilabs/tic.figshare?branch=master&svg=true)](https://ci.appveyor.com/project/ropensci/tic.figshare)
+[![Coverage Status](https://codecov.io/gh/ropenscilabs/tic.figshare/branch/master/graph/badge.svg)](https://codecov.io/github/ropenscilabs/tic.figshare?branch=master)
 
 A minimal example that uploads artifacts to a [figshare sandbox](https://figshare.com/authors/ROpenSci_Demo/453074) using _tic_.
 The sandbox is purged regularly, but if you're lucky you might access the most recent artifact from there:
