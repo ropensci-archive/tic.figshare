@@ -1,4 +1,4 @@
-add_package_checks()
+do_package_checks()
 
 get_stage("deploy") %>%
   add_code_step(
