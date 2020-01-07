@@ -2,8 +2,7 @@ do_package_checks()
 
 get_stage("deploy") %>%
   add_code_step(
-    pkgbuild::build(dest_path = "."),
-    prepare_call = remotes::install_github("r-lib/pkgbuild")
+    pkgbuild::build(dest_path = ".")
   )
 
 if (Sys.getenv("FIGSHARE_API") != "") {
@@ -44,6 +43,6 @@ if (Sys.getenv("FIGSHARE_API") != "") {
         rfigshare::fs_make_public(id, session = api_key)
       },
       # Needs rfigshare > 0.3.7
-      prepare_call = remotes::install_github("ropensci/rfigshare")
+      prepare_call = remotes::install_github("ropensci/rfigshare", "ropenscilabs/tic")
     )
 }
