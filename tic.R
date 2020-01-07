@@ -43,6 +43,6 @@ if (Sys.getenv("FIGSHARE_API") != "") {
         rfigshare::fs_make_public(id, session = api_key)
       },
       # Needs rfigshare > 0.3.7
-      prepare_call = remotes::install_github("ropensci/rfigshare", "ropenscilabs/tic")
+      prepare_call = remotes::install_github(c("ropensci/rfigshare", "ropenscilabs/tic"))
     )
 }
