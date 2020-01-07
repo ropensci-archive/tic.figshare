@@ -12,6 +12,7 @@ if (Sys.getenv("FIGSHARE_API") != "") {
   # - `Sys.getenv("BUILD_PKGDOWN") != ""`: If the env var "BUILD_PKGDOWN" is set
   # - `Sys.getenv("TRAVIS_EVENT_TYPE") == "cron"`: Only for Travis cron jobs
   get_stage("deploy") %>%
+    add_step(step_install_cran("base64enc")) %>% # for `tic::base64unserialize()`
     add_code_step(
       {
         library(magrittr)
