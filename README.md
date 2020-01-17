@@ -1,7 +1,7 @@
 # tic.figshare
 
 [![Travis build status](https://img.shields.io/travis/ropenscilabs/tic.figshare/master?logo=travis&style=flat-square&label=Linux)](https://travis-ci.org/ropenscilabs/tic.figshare)
-[![AppVeyor build status](https://img.shields.io/appveyor/ci/ropensci/tic-figshare?label=Windows&logo=appveyor&style=flat-square)](https://ci.appveyor.com/project/ropensci/tic-figshare)
+[![Build status](https://ci.appveyor.com/api/projects/status/y43b7snnsj4w1av9?svg=true)](https://ci.appveyor.com/project/ropenscilabs/tic-figshare)
 [![Coverage Status](https://codecov.io/gh/ropenscilabs/tic.figshare/branch/master/graph/badge.svg)](https://codecov.io/github/ropenscilabs/tic.figshare?branch=master)
 
 A minimal example that uploads artifacts to a [figshare sandbox](https://figshare.com/authors/ROpenSci_Demo/453074) using _tic_.
